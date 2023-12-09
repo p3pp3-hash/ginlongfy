@@ -6,6 +6,8 @@ First public release.
 Collect data from a second generation Ginlong Wind and Solar Inverter equipped with a WIFI stick after the discontinue support on Ginlong
 Monitoring website (http://www.ginlongmonitoring.com/) without to connect to internet. The script collect data in json format and read always the last update data into the file to keep update and sync Domoticz.
 
+![alt text](/images/wifi-stick.webp)
+
 ## Configuring the inverter
 Log into your inverter wifi stick and click on 'Advanced'
 Now click 'Remote server'
