@@ -1,6 +1,6 @@
 
 ## Ginlongfy V0.1
-##First public release. Thanks to graham0 for original code "https://github.com/graham0/ginlong-wifi""
+First public release. Thanks to graham0 for original code "https://github.com/graham0/ginlong-wifi".
 
 ## Ginlongfy introduction
 Collect data from a second generation Ginlong/Solis inverter equipped with a WIFI stick after the discontinue support on Ginlong
