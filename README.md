@@ -1,6 +1,6 @@
 
 ## Ginlongfy V0.1
-First public release. Thanks to graham0 for original code "https://github.com/graham0/ginlong-wifi".
+First public release. 
 
 ## Ginlongfy introduction
 Collect data from a second generation Ginlong/Solis inverter equipped with a WIFI stick after the discontinue support on Ginlong
@@ -54,4 +54,4 @@ generation inverters. The simple fact is that I only have one inverter installed
 work for me! Please feel free to try them on other Ginlong inverters and let me know how you get on,
 please.
 
-
+Thanks to graham0 for original code "https://github.com/graham0/ginlong-wifi".
