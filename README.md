@@ -46,6 +46,8 @@ The log file 'domoticz-log.json' contains following values separated as follows:
 
 The script 'upldata.sh' will read and push data in Domoticz to update sensors. Use crontab -e in your linux machine to automate the job in Domoticz.
 
+![alt text](/images/domoticz.png)
+
 ## Disclaimer
 This works fine on my Solis 3.6 2G inverter equipped with a WIFI 'stick'. According to Ginlong, the 
 WIFI stick is compatible with all it's current solar and wind generation 2G inverters. It would be
