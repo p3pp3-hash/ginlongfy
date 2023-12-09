@@ -3,7 +3,7 @@
 First public release. 
 
 ## Ginlongfy introduction
-Collect data from a second generation Ginlong/Solis inverter equipped with a WIFI stick after the discontinue support on Ginlong
+Collect data from a second generation Ginlong Wind and Solar Inverter equipped with a WIFI stick after the discontinue support on Ginlong
 Monitoring website (http://www.ginlongmonitoring.com/) without to connect to internet. The script collect data in json format and read always the last update data into the file to keep update and sync Domoticz.
 
 ## Configuring the inverter
@@ -49,11 +49,6 @@ The script 'upldata.sh' will read and push data in Domoticz to update sensors. U
 ![alt text](/images/domoticz.png)
 
 ## Disclaimer
-This works fine on my Solis 3.6 2G inverter equipped with a WIFI 'stick'. According to Ginlong, the 
-WIFI stick is compatible with all it's current solar and wind generation 2G inverters. It would be
-logical therefore to assume that these scripts would be compatible with all the current second
-generation inverters. The simple fact is that I only have one inverter installed and these scripts
-work for me! Please feel free to try them on other Ginlong inverters and let me know how you get on,
-please.
+This works fine on Ginlong Wind and Solar Inverter equipped with a WIFI 'stick'. According to Ginlong, the WIFI stick is compatible with all it's current solar and wind generation 2G inverters. Please feel free to try them on other Ginlong inverters and let me know how you get on, please.
 
 Thanks to graham0 for original code "https://github.com/graham0/ginlong-wifi".
