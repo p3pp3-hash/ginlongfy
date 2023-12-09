@@ -13,6 +13,8 @@ Enter a new ip address for 'Server B' (your computer) enter a port number (defau
 Click the 'Test' button and a tick should appear.
 Click 'Save' and when prompted 'Restart'
 
+![alt text](/images/ginlong-wifi-admin.webp)
+
 ## Using the script
 Open the "rd-ginlong.py" with a text editor and set the file locations for the log file and the 
 webfile to suit your system. The defaults should work for a standard Linux installation. 
