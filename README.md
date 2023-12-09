@@ -22,8 +22,6 @@ the first entry should appear when the inverter sends it's data. You may have to
 running firewall on your system.
 
 ## The output files
-Both programs produce the same output.
-
 The log file 'domoticz-log.json' contains following values separated as follows:
 
 {
