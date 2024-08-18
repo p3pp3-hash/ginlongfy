@@ -1,6 +1,7 @@
 
-## Ginlongfy V0.1
-First public release. 
+## Ginlongfy V1.0
+V0.1 - First public release. 
+V1.0 - minors bugfix and improvements to the script.
 
 ## Ginlongfy introduction
 Collect data from a second generation Ginlong Wind and Solar Inverter equipped with a WIFI stick after the discontinue support on Ginlong
@@ -49,6 +50,11 @@ The log file 'domoticz-log.json' contains following values separated as follows:
 The script 'upldata.sh' will read and push data in Domoticz to update sensors. Use crontab -e in your linux machine to automate the job in Domoticz.
 
 ![alt text](/images/domoticz.png)
+
+## The back-up function
+You can back-up your log using the file 'json-backup.sh', this will reduce your log file, in case you don't wnat keep it too long.
+
+
 
 ## Disclaimer
 This works fine on Ginlong Wind and Solar Inverter equipped with a WIFI 'stick'. According to Ginlong, the WIFI stick is compatible with all it's current solar and wind generation 2G inverters. Please feel free to try them on other Ginlong inverters and let me know how you get on, please.

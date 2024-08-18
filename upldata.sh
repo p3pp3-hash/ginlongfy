@@ -1,4 +1,5 @@
 ##!/bin/bash -x
+#version 1.0
 #Run jq command to retrieve data from file domoticz-log.json and send data to domoticz;
 #
 #Define correct path in case the crontab does not work properly. Uncomment line below if you experience in a problem;
@@ -8,11 +9,11 @@
     JSONFile='domoticz-log.json'
 
 # Define the Domoticz IDX, IP, and Port
-    IDX_now="ID watt_now"
     IDX_day="ID kwh_day"
     IDX_total="ID kwh_total"
-    IDX_month=""
-    IDX_last_month=""
+    IDX_month="ID kwh_current_month"
+    IDX_last_month="ID kwh_last_month"
+    IDX_eol="ID_live_measurement"
     domoticzIP='localhost or your domoticz IP'
     domoticzPort="your domoticz port"
 
@@ -40,12 +41,13 @@
         echo "kwh_lastmonth: $kwh_lastmonth"
 
     # Add your code here to send the values to Domoticz
-
-        curl -s "http://$domoticzIP:$domoticzPort/json.htm?type=command&param=udevice&idx=$IDX_now&nvalue=0&svalue=$watt_now"        
+      
         curl -s "http://$domoticzIP:$domoticzPort/json.htm?type=command&param=udevice&idx=$IDX_day&nvalue=0&svalue=$kwh_day"
         curl -s "http://$domoticzIP:$domoticzPort/json.htm?type=command&param=udevice&idx=$IDX_total&nvalue=0&svalue=$kwh_total"
         curl -s "http://$domoticzIP:$domoticzPort/json.htm?type=command&param=udevice&idx=$IDX_month&nvalue=0&svalue=$kwh_month"
         curl -s "http://$domoticzIP:$domoticzPort/json.htm?type=command&param=udevice&idx=$IDX_lastmonth&nvalue=0&svalue=$kwh_lastmonth"
+        curl -s "http://$domoticzIP:$domoticzPort/json.htm?type=command&param=udevice&idx=$IDX_eol&nvalue=0&svalue=$watt_now;$kwh_day"
+
 
         else
         echo "Required data not found in the JSON file."
