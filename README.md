@@ -1,7 +1,6 @@
 
 ## Ginlongfy V1.0
-V0.1 - First public release. 
-V1.0 - minors bugfix and improvements to the script.
+What's new: minors bugfix and improvements to the script.
 
 ## Ginlongfy introduction
 Collect data from a second generation Ginlong Wind and Solar Inverter equipped with a WIFI stick after the discontinue support on Ginlong
