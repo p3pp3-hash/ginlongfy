@@ -36,7 +36,7 @@ LOG_HISTORY = Path("domoticz-log.jsonl")  # JSON Lines (one object per line)
 
 # Domoticz
 DOMOTICZ_BASE = "http://192.168.2.36:15000"  # set your host:port
-IDX_COMBINED = 182  # udevice expecting svalue="watt;total_kwh"
+IDX_COMBINED = 182  # udevice expecting svalue="watt;day_kwh"
 IDX_DAY: Optional[int] = 171  # set idx for daily kWh if desired
 IDX_MONTH: Optional[int] = 175
 IDX_LAST_MONTH: Optional[int] = 176
@@ -124,7 +124,8 @@ def push_to_domoticz(data: Dict[str, float]) -> None:
         return
 
     if IDX_COMBINED is not None:
-        svalue = f"{int(data['watt_now'])};{data['kwh_total']}"
+        # Push live power and today's production (not lifetime total) in one device
+        svalue = f"{int(data['watt_now'])};{data['kwh_day']}"
         _domoticz_get(
             {
                 "type": "command",
